@@ -1,4 +1,3 @@
-import 'package:crypto_with_bloc/app/observers/app_bloc_observer.dart';
 import 'package:crypto_with_bloc/auth/bloc/authentication_bloc.dart';
 import 'package:crypto_with_bloc/auth/data/providers/authentication_firebase_provider.dart';
 import 'package:crypto_with_bloc/auth/data/providers/google_sign_in_provider.dart';
@@ -14,7 +13,6 @@ import 'package:google_sign_in/google_sign_in.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  Bloc.observer = AppBlocObserver();
   runApp(MyApp());
 }
 
